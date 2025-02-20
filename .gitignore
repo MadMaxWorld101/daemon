@@ -1,0 +1,56 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+venv/pyvenv.cfg
+# Virtual environment directories
+*.env
+*.venv
+env/
+venv/
+.vscode/
+
+# IDE/editor config files (e.g. VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+# macOS-specific files
+.DS_Store
+
+# Linux-specific files
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyCharm specific files
+.idea/
+
+# Local configuration files (e.g. for debugging)
+*.log
+*.bak
+*.swp
+
+# Secret keys and sensitive files
+config.json
+*.env
+
+# Python distribution files
+dist/
+build/
+*.egg-info/
+
+# Test or coverage reports
+*.coverage
+*.tox/
+.nox/
+.coverage.*
+nosetests.xml
+pytest.xml
+coverage.xml
+
+# Other unnecessary system or temp files
+*.lock
+*.tmp
