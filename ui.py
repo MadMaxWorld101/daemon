@@ -1,10 +1,13 @@
 def draw_ui(stdscr, bat, message):
+    """
+    Draw the UI elements.
+    This function is no longer needed as the bat can draw itself,
+    but is kept for backward compatibility if needed.
+    """
     height, width = stdscr.getmaxyx()
     
-    # Draw each line of the bat's current frame
-    frame = bat.get_current_frame()
-    for i, line in enumerate(frame):
-        stdscr.addstr(int(bat.y) + i, int(bat.x), line)
+    # Draw bat (now handled directly by the bat class)
+    bat.draw(stdscr)
     
-    # Display the message at the bottom
+    # Display message
     stdscr.addstr(height - 2, 0, f">>> {message}")
